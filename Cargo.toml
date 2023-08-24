@@ -1,0 +1,21 @@
+[package]
+name	= "nt-cyclonedds-rs"
+authors = ["Nobuyuki Tomizawa <nobuyuki.tomizawa@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+license	= "Apache-2.0"
+
+[workspace]
+members = [
+	"sys",
+
+	"tools/idlc",
+	"tools/idlpp",
+	"tools/ddsperf",
+]
+
+[features]
+default	= []
+
+[dependencies]
+nt-cyclonedds-sys = { path = "./sys"}
